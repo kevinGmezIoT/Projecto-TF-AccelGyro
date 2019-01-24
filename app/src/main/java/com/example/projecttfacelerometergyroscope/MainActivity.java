@@ -8,6 +8,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
@@ -27,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         //Enlazamos las variables con los Id's de los campos de texto creados en la pantalla
         acc_x = (TextView) findViewById(R.id.acc_x);
         acc_y = (TextView) findViewById(R.id.acc_y);
@@ -61,6 +64,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             acc_x.setText("Accelerometer in x:"+xs);
             acc_y.setText("Accelerometer in y:"+ys);
             acc_z.setText("Accelerometer in z:"+zs);
+
+            if(x>-0.5&&x<0.5) {
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference myRef = database.getReference("X-accel");
+                myRef.setValue(xs);
+                myRef = database.getReference("Y-accel");
+                myRef.setValue(ys);
+                myRef = database.getReference("Z-accel");
+                myRef.setValue(zs);
+            }
         }
 
         //Identico en el caso del giroscopio

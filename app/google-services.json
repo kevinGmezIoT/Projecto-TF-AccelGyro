@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "75902615707",
+    "firebase_url": "https://projecttfacelerometergyroscope.firebaseio.com",
+    "project_id": "projecttfacelerometergyroscope",
+    "storage_bucket": "projecttfacelerometergyroscope.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75902615707:android:0986c6bf79ef4ad7",
+        "android_client_info": {
+          "package_name": "com.example.projecttfacelerometergyroscope"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75902615707-cq37b3qvr9cdaj5ui0ocicucc54fbgpg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projecttfacelerometergyroscope",
+            "certificate_hash": "967aca9863d231b2a2c06bfca71ac88689ab6c43"
+          }
+        },
+        {
+          "client_id": "75902615707-97d38hou0vgjabhtq6h35hkdnclrjd37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3hQMZVNwhE5KUb2iCi0lB7R-h20D9mRg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75902615707-97d38hou0vgjabhtq6h35hkdnclrjd37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
